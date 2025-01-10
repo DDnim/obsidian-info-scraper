@@ -1,7 +1,7 @@
 {
 	"name": "obsidian-info-scraper",
-	"version": "1.0.0",
-	"description": "Search and save web content using Exa Search API directly in Obsidian",
+	"version": "1.0.2",
+	"description": "Search and save web content using Exa Search API directly",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
