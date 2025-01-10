@@ -1,10 +1,10 @@
 {
 	"id": "obsidian-info-scraper",
-	"name": "Exa Search Integration",
+	"name": "Info scraper",
 	"version": "1.0.2",
 	"minAppVersion": "0.15.0",
-	"description": "Search and save web content using Exa Search API directly in Obsidian",
-	"author": "toyo-sakai",
+	"description": "Search and save web content using Exa Search API directly",
+	"author": "DDnim",
 	"authorUrl": "",
 	"fundingUrl": "",
 	"isDesktopOnly": false
