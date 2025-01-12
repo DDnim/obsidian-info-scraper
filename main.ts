@@ -125,6 +125,7 @@ class ExaSearchModal extends Modal {
     onOpen() {
         const {contentEl} = this;
         contentEl.empty();
+        contentEl.addClass('info-scraper-modal');
         
         contentEl.createEl('h2', {text: 'Enter search keyword'});
 
@@ -133,8 +134,6 @@ class ExaSearchModal extends Modal {
             type: 'text',
             placeholder: 'Enter your search query'
         });
-        inputEl.style.width = '100%';
-        inputEl.style.marginBottom = '10px';
 
         // Track IME composition state
         let isComposing = false;
@@ -147,13 +146,12 @@ class ExaSearchModal extends Modal {
 
         // Date range inputs
         const dateContainer = contentEl.createEl('div');
-        dateContainer.style.marginBottom = '10px';
+        dateContainer.addClass('date-container');
 
         const startDateLabel = dateContainer.createEl('label', {text: 'Start Date: '});
         const startDateInput = dateContainer.createEl('input', {
             type: 'date',
         });
-        startDateInput.style.marginRight = '10px';
 
         const endDateLabel = dateContainer.createEl('label', {text: 'End Date: '});
         const endDateInput = dateContainer.createEl('input', {
@@ -162,22 +160,19 @@ class ExaSearchModal extends Modal {
 
         // Number of results input
         const resultsContainer = contentEl.createEl('div');
-        resultsContainer.style.marginBottom = '10px';
-        resultsContainer.style.marginTop = '10px';
+        resultsContainer.addClass('results-container');
 
         const resultsLabel = resultsContainer.createEl('label', {text: 'Number of Results: '});
         const resultsInput = resultsContainer.createEl('input', {
             type: 'number',
             value: '10'
         });
-        resultsInput.style.width = '60px';
         resultsInput.setAttribute('min', '1');
         resultsInput.setAttribute('max', '100');
 
         const buttonEl = contentEl.createEl('button', {
             text: 'Search'
         });
-        buttonEl.style.width = '100%';
 
         const performSearch = async (query: string) => {
             if (!query.trim()) {
