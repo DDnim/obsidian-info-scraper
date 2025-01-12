@@ -6,3 +6,36 @@ available in the app when your plugin is enabled.
 If your plugin does not need CSS, delete this file.
 
 */
+
+/* Search Modal Styles */
+.info-scraper-modal input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.info-scraper-modal .date-container {
+    margin-bottom: 10px;
+}
+
+.info-scraper-modal input[type="date"] {
+    margin-right: 10px;
+}
+
+.info-scraper-modal .results-container {
+    margin: 10px 0;
+}
+
+.info-scraper-modal .results-label {
+    margin-right: 10px;
+}
+
+.info-scraper-modal .button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.info-scraper-modal .search-button {
+    margin-right: 0;
+}
