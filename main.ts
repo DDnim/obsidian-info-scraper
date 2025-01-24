@@ -148,12 +148,12 @@ class ExaSearchModal extends Modal {
         const dateContainer = contentEl.createEl('div');
         dateContainer.addClass('date-container');
 
-        const startDateLabel = dateContainer.createEl('label', {text: 'Start Date: '});
+        const startDateLabel = dateContainer.createEl('label', {text: 'Start date: '});
         const startDateInput = dateContainer.createEl('input', {
             type: 'date',
         });
 
-        const endDateLabel = dateContainer.createEl('label', {text: 'End Date: '});
+        const endDateLabel = dateContainer.createEl('label', {text: 'End date: '});
         const endDateInput = dateContainer.createEl('input', {
             type: 'date',
         });
@@ -162,7 +162,7 @@ class ExaSearchModal extends Modal {
         const resultsContainer = contentEl.createEl('div');
         resultsContainer.addClass('results-container');
 
-        const resultsLabel = resultsContainer.createEl('label', {text: 'Number of Results: '});
+        const resultsLabel = resultsContainer.createEl('label', {text: 'Number of results: '});
         const resultsInput = resultsContainer.createEl('input', {
             type: 'number',
             value: '10'
@@ -238,7 +238,7 @@ class ExaSearchSettingTab extends PluginSettingTab {
         containerEl.empty();
 
         new Setting(containerEl)
-            .setName('API Key')
+            .setName('API key')
             .setDesc('Enter your Exa API key')
             .addText(text => text
                 .setPlaceholder('Enter your API key')
@@ -249,7 +249,7 @@ class ExaSearchSettingTab extends PluginSettingTab {
                 }));
 
         new Setting(containerEl)
-            .setName('Root Folder')
+            .setName('Root folder')
             .setDesc('Root folder for saving search results')
             .addText(text => text
                 .setPlaceholder('Enter root folder path')

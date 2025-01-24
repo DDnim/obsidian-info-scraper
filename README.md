@@ -27,7 +27,7 @@ This plugin integrates Exa Search functionality directly into Obsidian, allowing
 
 The plugin requires the following settings:
 
-- Exa API Key: Your Exa Search API key
+- Exa API key: Your Exa Search API key
 - Search Results Folder: Where to save search results (default: "Exa Search Results")
 - Root Folder: Base folder for organizing search results (default: "Exa")
 
